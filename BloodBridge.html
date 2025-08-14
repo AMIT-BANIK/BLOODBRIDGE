@@ -36,5 +36,66 @@
       <button id="register-btn">Register</button>
     </div>
 
+    <div id="Register" class="section">
+        <div class="form-container">
+            <h2>Blood Donor Registration</h2>
+            <p><b>Please fill in your details to join our life-saving mission.</b></p>
+            <form id="donorForm">
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+           <label for="email">Email Address:</label>
+           <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+           <label for="phone">Phone Number:</label>
+           <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+           <label for="bloodgroup">Blood Group:</label>
+            <select id="bloodgroup" name="bloodgroup" required>
+                <option value="">Select your blood group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+
+             <label for="division">Division:</label>
+            <select id="division" name="division" required>
+        <option value="">Select Division</option>
+        <option value="Dhaka">Dhaka</option>
+        <option value="Chattogram">Chattogram</option>
+        <option value="Khulna">Khulna</option>
+        <option value="Rajshahi">Rajshahi</option>
+        <option value="Rangpur">Rangpur</option>
+        <option value="Mymensingh">Mymensingh</option>
+        <option value="Sylhet">Sylhet</option>
+        <option value="Barishal">Barishal</option>
+      </select>
+
+      <label for="district">District:</label>
+      <input type="text" id="districtname" name="districtname" placeholder="Enter your District name" required><br>
+
+      <label for="upazila">Upazila:</label>
+      <input type="text" id="upuzillaname" name="upuzillaname" placeholder="Enter your Upuzilla name" required><br>
+
+            <label for="availability">Availability:</label>
+            <select id="availability" name="availability" required>
+                <option value="">Select availability</option>
+                <option value="Avilable">Avilable</option>
+                <option value="NotAbilable"> Not Avilable</option>
+            </select>
+     
+            <button type="submit" class="submit-btn">Register as Donor</button>
+
+            <button type="button" class="exit-btn" onclick="showSection('hero')">Exit</button>
+            </form>
+        </div>
+    </div>
+<script src="BloodBridge.js"></script>
 </body>
 </html>
