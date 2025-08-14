@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:  "Neuton", serif;;
+  overflow-x: hidden;
+}
+.section {
+  display: none; 
+  flex-direction: column;
+}
+
+#hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#hero_content {
+ 
+  text-align: center;
+}
+
+#hero_content h1 {
+  color:black;
+  font-size: 2.8rem;
+  justify-content: center;
+}
+
+#hero_content h2 {
+  color:black;
+  font-size: 1.9rem;
+  margin-top: 1rem;
+  justify-content: center;
+
+}
+
+#header {
+   width: 90%;
+  color: black;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Neuton", serif;
+  line-height: 50px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+}
+
+#navbar h1 {
+  color: burlywood;
+  flex: 1;
+  font-family: cursive;
+}
+#nav-links {
+  display: flex;
+  gap: 20px
+}
+
+#nav-links li {
+  list-style: none;
+}
+
+#nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+#nav-links li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: green;
+  transition: width 0.3s ease;
+}
+
+#nav-links li a:hover::after {
+  width: 100%;
+}
+
+#nav-links li a.active::after {
+  width: 100%;
+}
+#nav-links li a:hover,
+#nav-links li a.active {
+  color: red;
+}
+
+.btncointainer{
+    margin-top:-180px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#register-btn{
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition:
+    background 0.4s ease,
+    transform 0.2s ease,
+    box-shadow 0.3s ease,
+    outline 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+#register-btn:hover{
+  background: red;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+#register-btn:active{
+  transform: scale(0.96);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
