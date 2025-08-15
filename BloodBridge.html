@@ -22,9 +22,12 @@
 
     <div id="header" >
         <nav id="navbar">
+            <div id="logo" onclick="showSection('hero')">
+                <img src="images/logo2.gif" alt="Logo">
+            </div>
             <ul id="nav-links">
                 <li><a href="#" onclick="showSection('hero')">Home</a></li>
-                <li><a href="#" onclick="showSection('Donate')">Donet</a></li>
+                <li><a href="#" onclick="showSection('Register')">Donet</a></li>
                 <li><a href="#" onclick="showSection('SearchDonner')">Search</a></li>
                 <li><a href="#" onclick="showSection('AboutUs')">About Us</a></li>
                 <li><a href="#" onclick="showSection('Gethelp')">Get Help</a></li>  
@@ -45,13 +48,13 @@
             <label for="fullname">Full Name:</label>
             <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
 
-           <label for="email">Email Address:</label>
-           <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-           <label for="phone">Phone Number:</label>
-           <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
 
-           <label for="bloodgroup">Blood Group:</label>
+            <label for="bloodgroup">Blood Group:</label>
             <select id="bloodgroup" name="bloodgroup" required>
                 <option value="">Select your blood group</option>
                 <option value="A+">A+</option>
@@ -64,24 +67,24 @@
                 <option value="AB-">AB-</option>
             </select>
 
-             <label for="division">Division:</label>
+            <label for="division">Division:</label>
             <select id="division" name="division" required>
-        <option value="">Select Division</option>
-        <option value="Dhaka">Dhaka</option>
-        <option value="Chattogram">Chattogram</option>
-        <option value="Khulna">Khulna</option>
-        <option value="Rajshahi">Rajshahi</option>
-        <option value="Rangpur">Rangpur</option>
-        <option value="Mymensingh">Mymensingh</option>
-        <option value="Sylhet">Sylhet</option>
-        <option value="Barishal">Barishal</option>
-      </select>
+                <option value="">Select Division</option>
+                <option value="Dhaka">Dhaka</option>
+                <option value="Chattogram">Chattogram</option>
+                <option value="Khulna">Khulna</option>
+                <option value="Rajshahi">Rajshahi</option>
+                <option value="Rangpur">Rangpur</option>
+                <option value="Mymensingh">Mymensingh</option>
+                <option value="Sylhet">Sylhet</option>
+                <option value="Barishal">Barishal</option>
+            </select>
 
-      <label for="district">District:</label>
-      <input type="text" id="districtname" name="districtname" placeholder="Enter your District name" required><br>
+            <label for="district">District:</label>
+            <input type="text" id="districtname" name="districtname" placeholder="Enter your District name" required><br>
 
-      <label for="upazila">Upazila:</label>
-      <input type="text" id="upuzillaname" name="upuzillaname" placeholder="Enter your Upuzilla name" required><br>
+            <label for="upazila">Upazila:</label>
+            <input type="text" id="upuzillaname" name="upuzillaname" placeholder="Enter your Upuzilla name" required><br>
 
             <label for="availability">Availability:</label>
             <select id="availability" name="availability" required>
@@ -90,12 +93,26 @@
                 <option value="NotAbilable"> Not Avilable</option>
             </select>
      
-            <button type="submit" class="submit-btn">Register as Donor</button>
+            <button type="submit" id="submit-btn">Register as Donor</button>
 
             <button type="button" class="exit-btn" onclick="showSection('hero')">Exit</button>
             </form>
         </div>
     </div>
+
+    <div id="AfterRegister" class="section">
+        <div class="R-container">
+            <div class="R-box">
+                <div class="R-content">
+                    <h2>Registration Complete.<br> Thanks for Registration.</h2>
+                </div>
+            </div>
+            <button type="button" class="Rexit-btn" onclick="showSection('hero')">Exit</button>
+        </div>
+    </div>
+
+
+
 <script src="BloodBridge.js"></script>
 </body>
 </html>
