@@ -27,7 +27,7 @@
             </div>
             <ul id="nav-links">
                 <li><a href="#" onclick="showSection('hero')">Home</a></li>
-                <li><a href="#" onclick="showSection('Register')">Donet</a></li>
+                <li><a href="#" onclick="showSection('logReg')">Donet</a></li>
                 <li><a href="#" onclick="showSection('SearchDonner')">Search</a></li>
                 <li><a href="#" onclick="showSection('AboutUs')">About Us</a></li>
                 <li><a href="#" onclick="showSection('Gethelp')">Get Help</a></li>  
@@ -110,6 +110,41 @@
             <button type="button" class="Rexit-btn" onclick="showSection('hero')">Exit</button>
         </div>
     </div>
+
+    <div id="logReg" class="section">
+        <div class="Lcontainer">
+            <div class="toggle-box">
+                <div class="toggle-panel toggle-left">
+                    <h1>Hello, Welcome!</h1>
+                    <p>Don't have an account?</p>
+                    <div class="btn">
+      <button id="rregister-btn">Register</button>
+    </div>
+                </div>
+            </div>
+
+        <div class="form-box login">
+            <form action="#">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="forget-link">
+                    <a href="#">Forgot Password?</a>
+                </div>
+               <button type="submit" class="btn">Login</button>
+       
+            </form>
+        </div>
+    </div>
+    <button type="button" class="Rexit-btn" onclick="showSection('hero')">Exit</button>
+</div>
+
 
 
 

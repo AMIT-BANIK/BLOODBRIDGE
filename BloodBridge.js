@@ -2,7 +2,7 @@ function showSection(id) {
   document.querySelectorAll('.section').forEach(sec => sec.style.display = 'none');
   document.getElementById(id).style.display = 'flex';
   const navbar = document.getElementById('header');
-  if (id === 'Register') {
+  if (id === 'Register'||id === 'logReg') {
     navbar.style.display = 'none';
   } else {
     navbar.style.display = 'flex';
@@ -14,6 +14,13 @@ window.onload = () => {
   const registerbtn = document.getElementById('register-btn');
   if (registerbtn) {
     registerbtn.addEventListener('click', function () {
+      showSection('Register');
+    });
+  }
+
+  const rregisterbtn = document.getElementById('rregister-btn');
+  if (rregisterbtn) {
+    rregisterbtn.addEventListener('click', function () {
       showSection('Register');
     });
   }

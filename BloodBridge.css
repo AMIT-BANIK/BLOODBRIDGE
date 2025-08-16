@@ -7,6 +7,7 @@
 body {
   font-family:  "Neuton", serif;;
   overflow-x: hidden;
+
 }
 .section {
   display: none; 
@@ -268,4 +269,112 @@ body {
   font-size: 16px;
   cursor: pointer;
   margin-top: 10px;
+}
+
+#logReg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f2f5; /* light background */
+}
+
+.Lcontainer {
+  position: relative;
+  display: flex;
+  width: 650px;
+  height: 600px;
+  background:#fff;
+  margin:20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  border-radius: 30px;
+  overflow: hidden;
+  margin-top: 200px;
+}
+
+/* Left panel */
+.toggle-box {
+  flex: 1;
+  background: #5a7dff; /* blue color */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top-right-radius: 150px;   /* curve on top-right */
+  border-bottom-right-radius: 150px; /* curve on bottom-right */
+}
+
+.toggle-panel h1 {
+  margin-bottom: 10px;
+}
+
+.toggle-panel p {
+  margin-bottom: 20px;
+}
+
+.toggle-panel .btn {
+  background: transparent;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Right login form */
+.form-box {
+  flex: 1;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-box h1 {
+  margin-bottom: 20px;
+}
+
+.input-box {
+  position: relative;
+  margin: 10px 0;
+}
+
+.input-box input {
+  width: 250px;
+  padding: 12px 40px 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.input-box i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.btn {
+  width: 250px;
+  padding: 12px;
+  background: #5a7dff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  margin-top: 15px;
+}
+#rregister-btn{
+  background: #5a7dff;
+  border:none;
+  display: flex;
+  justify-content: center;   
+  align-items: center;      
+  
+}
+
+.forget-link {
+  margin: 10px 0;
 }
