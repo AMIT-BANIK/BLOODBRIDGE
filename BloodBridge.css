@@ -229,13 +229,13 @@ body {
 
 #AfterRegister {
   background: url(images/div.jpg) no-repeat center center;
-  background-size: cover; /* ensure it covers full container */
+  background-size: cover;
   min-height: 125vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-   /* fixed spacing */
+  
 }
 
 .R-container {
@@ -276,7 +276,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #f0f2f5; /* light background */
+  background:url(images/div.jpg) no-repeat center center;
 }
 
 .Lcontainer {
@@ -292,10 +292,9 @@ body {
   margin-top: 200px;
 }
 
-/* Left panel */
 .toggle-box {
   flex: 1;
-  background: #5a7dff; /* blue color */
+  background: #5a7dff;
   color: white;
   display: flex;
   justify-content: center;
@@ -320,9 +319,11 @@ body {
   border-radius: 25px;
   color: white;
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-/* Right login form */
 .form-box {
   flex: 1;
   background: white;
@@ -365,13 +366,14 @@ body {
   color: white;
   cursor: pointer;
   margin-top: 15px;
+  align-items: center;
 }
 #rregister-btn{
   background: #5a7dff;
   border:none;
   display: flex;
-  justify-content: center;   
-  align-items: center;      
+  justify-content: center;    
+  text-align: center;    
   
 }
 
