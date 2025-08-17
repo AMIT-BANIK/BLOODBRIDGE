@@ -2,7 +2,7 @@ function showSection(id) {
   document.querySelectorAll('.section').forEach(sec => sec.style.display = 'none');
   document.getElementById(id).style.display = 'flex';
   const navbar = document.getElementById('header');
-  if (id === 'Register'||id === 'logReg') {
+  if (id === 'Register'||id === 'logReg'||id==='profile') {
     navbar.style.display = 'none';
   } else {
     navbar.style.display = 'flex';
