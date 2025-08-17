@@ -137,7 +137,7 @@
                 <div class="forget-link">
                     <a href="#">Forgot Password?</a>
                 </div>
-               <button type="submit" class="btn">Login</button>
+               <button type="submit" class="btn" onclick="showSection('profile')">Login</button>
        
             </form>
         </div>
@@ -145,6 +145,90 @@
     <button type="button" class="Rexit-btn" onclick="showSection('hero')">Exit</button>
 </div>
 
+<div id="profile" class="section">
+  <div class="profile-wrapper">
+
+    <!-- Profile Header (Image + Toggle Button) -->
+    <div class="profile-header">
+      <div class="profile-image">
+        <img src="images/default-user.png" alt="User Image" id="userImage">
+      </div>
+      <button id="menuToggle" class="menu-btn">☰ Menu</button>
+    </div>
+
+    <!-- Hidden Profile Menu -->
+    <div id="profileMenu" class="profile-menu">
+      <ul>
+        <li><a href="#" id="viewProfileBtn">👤 View Profile</a></li>
+        <li><a href="#" id="editProfileBtn">✏️ Edit Profile</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="profile-main">
+
+      <!-- View Profile -->
+      <div id="viewProfile" class="profile-container active">
+        <h2>User Profile</h2>
+        <div class="profile-details">
+          <p><b>Full Name:</b> <span id="p-fullname">Not provided</span></p>
+          <p><b>Email:</b> <span id="p-email">Not provided</span></p>
+          <p><b>Phone:</b> <span id="p-phone">Not provided</span></p>
+          <p><b>Blood Group:</b> <span id="p-bloodgroup">Not provided</span></p>
+          <p><b>Division:</b> <span id="p-division">Not provided</span></p>
+          <p><b>District:</b> <span id="p-district">Not provided</span></p>
+          <p><b>Upazila:</b> <span id="p-upazila">Not provided</span></p>
+          <p><b>Availability:</b> <span id="p-availability">Not provided</span></p>
+        </div>
+      </div>
+
+      <!-- Edit Profile -->
+      <div id="editProfile" class="profile-container">
+        <h2>Edit Profile</h2>
+        <form id="editProfileForm">
+          <label>Full Name</label>
+          <input type="text" id="editFullname" placeholder="Enter full name">
+
+          <label>Email</label>
+          <input type="email" id="editEmail" placeholder="Enter email">
+
+          <label>Phone</label>
+          <input type="tel" id="editPhone" placeholder="Enter phone number">
+
+          <label>Blood Group</label>
+          <select id="editBloodgroup">
+            <option value="">Select</option>
+            <option>A+</option><option>A-</option>
+            <option>B+</option><option>B-</option>
+            <option>O+</option><option>O-</option>
+            <option>AB+</option><option>AB-</option>
+          </select>
+
+          <label>Division</label>
+          <input type="text" id="editDivision" placeholder="Enter division">
+
+          <label>District</label>
+          <input type="text" id="editDistrict" placeholder="Enter district">
+
+          <label>Upazila</label>
+          <input type="text" id="editUpazila" placeholder="Enter upazila">
+
+          <label>Availability</label>
+          <select id="editAvailability">
+            <option value="">Select</option>
+            <option>Available</option>
+            <option>Not Available</option>
+          </select>
+
+          <button type="submit">💾 Save Changes</button>
+        </form>
+      </div>
+
+      <!-- Exit -->
+      <button type="button" class="Pexit-btn" onclick="showSection('hero')">Exit</button>
+    </div>
+  </div>
+</div>
 
 
 

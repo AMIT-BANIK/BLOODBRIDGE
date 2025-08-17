@@ -24,9 +24,17 @@ window.onload = () => {
       showSection('Register');
     });
   }
+    const menuToggle = document.getElementById("menuToggle");
+  const profileMenu = document.getElementById("profileMenu");
+
+  if (menuToggle) {
+    menuToggle.addEventListener("click", () => {
+      profileMenu.classList.toggle("show"); // just show/hide menu
+    });
+  }
+}
   
 
-}
 const donorForm = document.getElementById('Register');
 
 donorForm.addEventListener('submit', function(e) {
