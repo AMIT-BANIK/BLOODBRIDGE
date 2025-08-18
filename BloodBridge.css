@@ -441,10 +441,20 @@ body {
   background: #8e1111;
 }
 
-/* Hidden Profile Menu */
 .profile-menu {
   display: none;
-  margin-bottom: 20px;
+  flex-direction: column;
+  background: white;
+  position:absolute;
+  top:100px;
+  right: 300px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  padding:10px;
+  z-index: 999;
+}
+.profile-menu.active{
+  display:flex;
 }
 
 .profile-menu ul {

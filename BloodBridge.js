@@ -24,12 +24,12 @@ window.onload = () => {
       showSection('Register');
     });
   }
-    const menuToggle = document.getElementById("menuToggle");
-  const profileMenu = document.getElementById("profileMenu");
+  const menu = document.getElementById('menuToggle');
+  const profileMenu = document.getElementById('profileMenu');
 
-  if (menuToggle) {
-    menuToggle.addEventListener("click", () => {
-      profileMenu.classList.toggle("show"); // just show/hide menu
+  if (menu && profileMenu) {
+    menu.addEventListener("click", function () {
+      profileMenu.classList.toggle('active'); 
     });
   }
 }
