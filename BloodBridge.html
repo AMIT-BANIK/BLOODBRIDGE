@@ -228,6 +228,56 @@
   </div>
 </div>
 
+<div id="SearchDonner" class="section">
+  <div class="search-container">
+    <h2>🔍 Search for Blood Donors</h2>
+    <p><b>Find life-saving donors by blood group, division, or district.</b></p>
+
+    <form id="searchForm">
+      <label for="searchBloodgroup"></label>
+      <select id="searchBloodgroup" name="bloodgroup" required>
+        <option value="">Select Blood Group</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+      </select>
+
+      <label for="searchDivision"></label>
+      <select id="searchDivision" name="division">
+        <option value="">Select Division</option>
+        <option value="Dhaka">Dhaka</option>
+        <option value="Chattogram">Chattogram</option>
+        <option value="Khulna">Khulna</option>
+        <option value="Rajshahi">Rajshahi</option>
+        <option value="Rangpur">Rangpur</option>
+        <option value="Mymensingh">Mymensingh</option>
+        <option value="Sylhet">Sylhet</option>
+        <option value="Barishal">Barishal</option>
+      </select>
+ 
+      <label for="searchDistrict"></label>
+      <input type="text" id="searchDistrict" name="district" placeholder="Enter district">
+
+      <label for="searchUpazila"></label>
+      <input type="text" id="searchUpazila" name="upazila" placeholder="Enter upazila">
+
+      <label for="searchAvailability"></label>
+      <select id="searchAvailability" name="availability">
+        <option value="">Select Availability</option>
+        <option value="Available">Available</option>
+        <option value="Not Available">Not Available</option>
+      </select>
+
+      <button type="submit" id="search-btn">Search Donors</button>
+      <button type="button" class="Dexit-btn" onclick="showSection('hero')">Exit</button>
+    </form>
+  </div>
+</div>
 
 
 <script src="BloodBridge.js"></script>
